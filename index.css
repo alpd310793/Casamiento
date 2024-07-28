@@ -1,0 +1,59 @@
+/* Estilos generales para el cuerpo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del encabezado */
+.header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Estilo de la imagen de portada */
+.cover-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Estilo del ícono de reproducción */
+.play-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px; /* Tamaño del ícono */
+    cursor: pointer;
+}
+
+.play-icon img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .cover-image {
+        height: 50vh;
+    }
+}
+
+
+.countdown {
+    text-align: center;
+    margin: 20px;
+}
+
+#countdown-timer {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#countdown-timer span {
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
