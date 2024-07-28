@@ -32,14 +32,30 @@ body {
     width: 100%;
     height: auto;
 }
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .cover-image {
-        height: 50vh;
-    }
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+}
+
+.play-icon {
+    cursor: pointer;
+}
 
 .countdown {
     text-align: center;
@@ -47,13 +63,42 @@ body {
 }
 
 #countdown-timer {
-    font-size: 2em;
-    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-#countdown-timer span {
-    margin: 0 5px;
-    padding: 5px;
-    border: 1px solid #000;
+.time-unit {
+    flex: 1;
+    max-width: 120px;
+    text-align: center;
+    background: #f5f5dc; /* Cream background color */
+    border: 1px solid #dcdcdc; /* Light gray border */
     border-radius: 5px;
+    padding: 10px;
+}
+
+.time-unit span {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333; /* Dark text color for contrast */
+}
+
+.label {
+    font-size: 0.8em;
+    color: #666; /* Light gray text color for labels */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #countdown-timer {
+        flex-direction: column;
+    }
+    
+    .time-unit {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
 }
