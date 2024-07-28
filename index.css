@@ -188,16 +188,57 @@ a:hover {
     }
 }
 
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Sección de Galería */
+.galeria {
+    padding: 20px;
+    background-color: #f5f5dc; /* Cream background color */
+    text-align: center;
+}
+
+.galeria-titulo {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid adaptable */
+    gap: 10px; /* Espacio entre imágenes */
+}
+
+.galeria-imagen {
+    width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves para efectos */
+}
+
+.galeria-imagen:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el ratón */
+}
 
 /* Responsive design */
 @media (max-width: 768px) {
-    #countdown-timer {
-        flex-direction: column;
+    .galeria-titulo {
+        font-size: 1.5em; /* Ajuste del tamaño del título en pantallas pequeñas */
     }
-    
-    .time-unit {
-        max-width: 100%;
-        margin-bottom: 10px;
+
+    .galeria-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajuste de columnas en pantallas pequeñas */
     }
 }
