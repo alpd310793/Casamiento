@@ -91,7 +91,104 @@ body {
 .label {
     font-size: 0.8em;
     color: #666; /* Light gray text color for labels */
+
+    
 }
+
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.ceremonia-fiesta {
+    background: #f5f5dc; /* Cream background color for the section */
+    padding: 20px;
+    text-align: center; /* Center text inside the section */
+}
+
+.container {
+    max-width: 1140px; /* Adjust container width as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Center columns horizontally */
+    flex-wrap: wrap; /* Wrap columns on smaller screens */
+}
+
+.col-md-6 {
+    flex: 1;
+    max-width: 100%;
+    padding: 15px; /* Add some padding inside the columns */
+}
+
+h2 {
+    font-size: 1.5em; /* Adjust the size of the heading */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em; /* Adjust the size of the paragraph text */
+    margin-bottom: 10px;
+}
+
+a {
+    display: inline-block; /* Make link behave like a block element */
+    color: #fff; /* Text color inside the button */
+    background-color: #d4a45e; /* Light brown background color */
+    padding: 10px 20px; /* Add padding inside the button */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size of the button text */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+a:hover {
+    background-color: #c89b60; /* Slightly darker brown on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Icono de Fiesta */
+.fiesta-icon {
+    width: 300px; /* Tamaño del ícono */
+    height: auto; /* Mantiene la proporción del ícono */
+    margin-bottom: 10px; /* Espacio entre el ícono y el título */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .col-md-6 {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Smaller font size for the heading */
+    }
+
+    p {
+        font-size: 0.9em; /* Smaller font size for the paragraph */
+    }
+
+    a {
+        font-size: 0.9em; /* Adjust button font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+
+    .fiesta-icon {
+        width: 100px; /* Tamaño del ícono en pantallas más pequeñas */
+    }
+}
+
+
 
 /* Responsive design */
 @media (max-width: 768px) {
