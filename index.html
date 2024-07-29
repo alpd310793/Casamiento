@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@400;700&display=swap">
     <title>Ana y Cami</title>
-  </head>
-  <body>
+</head>
+<body>
     <header class="header">
         <img src="portada.jpg" alt="Portada" class="cover-image">
         <div class="play-icon" onclick="playAudio()">
@@ -23,7 +24,7 @@
                 <span id="days">00</span>
                 <div class="label">días</div>
             </div>
-           <!-- <div class="time-unit">
+            <div class="time-unit">
                 <span id="hours">00</span>
                 <div class="label">horas</div>
             </div>
@@ -34,98 +35,80 @@
             <div class="time-unit">
                 <span id="seconds">00</span>
                 <div class="label">segundos</div>
-            </div> -->
+            </div>
         </div>
     </section>
 
+    <!-- Sección de la fiesta -->
     <section class="ceremonia-fiesta">
- 
- 
         <div class="container">
-      
-          <div class="row">
-     <!-- Fiesta -->
-     
+            <div class="row">
                 <div class="col-md-6 columna fiesta animated fadeInDown" style="opacity: 1;">
-                    <img src="icono-nuestraboda.svg" alt="Icono de Fiesta" class="fiesta-icon">
+                    <img src="ceremonia_Mesa de trabajo 1.png" alt="Icono de Fiesta" class="fiesta-icon">
                     
-                  <h2>La Fiesta</h2>
-                  <p>
-                    Es el 01 de Marzo de 2025<br>
-      17:30 horas<br>
-      En el salon del Camping de Aguas Dulces<br>
-      Aguas Dulces, Rocha.            </p>
-                  <a target="_blank" href="https://www.google.com/maps/place/Camping+Aguas+Dulces/@-34.2733427,-53.7940456,17.75z/data=!4m6!3m5!1s0x95734658546c4d43:0x6b7adb510c5d48fa!8m2!3d-34.2740213!4d-53.7935961!16s%2Fg%2F11gfjw8g_b?entry=ttu">Cómo llegar</a>
+                    <p>
+                        Es el 01 de Marzo de 2025<br>
+                        17:30 horas<br>
+                        En el salón del Camping de Aguas Dulces<br>
+                        Aguas Dulces, Rocha.
+                    </p>
+                    <a target="_blank" href="https://www.google.com/maps/place/Camping+Aguas+Dulces/@-34.2733427,-53.7940456,17.75z/data=!4m6!3m5!1s0x95734658546c4d43:0x6b7adb510c5d48fa!8m2!3d-34.2740213!4d-53.7935961!16s%2Fg%2F11gfjw8g_b?entry=ttu">Cómo llegar</a>
                 </div>
-      
-      
-              
-      
-            
-          </div>
+            </div>
         </div>
-      </section>
+    </section> <br>
 
-
-      <section class="ceremonia-fiesta">
- 
- 
+    <!-- Sección de código de vestimenta -->
+    <section class="ceremonia-fiesta">
         <div class="container">
-      
-          <div class="row">
-     <!-- Fiesta -->
-   
+            <div class="row">
                 <div class="col-md-6 columna fiesta animated fadeInDown" style="opacity: 1;">
                     <img src="dress.png" alt="Icono de Fiesta" class="fiesta-icon">
-                    
-                  <p>Formal elegante.
-                    Nuestro casamiento será al aire libre, sugerimos no usar taco y llevar abrigo.            </p>
-                  
+                   
+                    <h3>Formal Elegante</h3>
+                    <p>Celebración al aire libre.
+                      Sugerencia abrigo y calzado cómodo.
+                    </p>
                 </div>
-      
-      
-              
-      
-            
-          </div>
+            </div>
         </div>
-      </section>
+    </section>
 
+    <!-- Sección de Información Bancaria -->
+    <section class="modal-seccion">
+        <div class="container">
+            <div class="div_cbu animated fadeInDown">
+                <img src="sssssssss-01.png" alt="Ícono de Información" class="icon globo fade-in">
+                <p>¡El mejor regalo es tu presencia!<br>Si deseas realizarnos un regalo...</p>
+                <a href="#modal-cbu" class="btn btn-alt" onclick="openModal()">Ver más</a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Modal -->
+    <div id="modal-cbu" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Datos Bancarios</h2>
+            <ul>
+                <li>A nombre de: Ana y Camila</li>
+                <li>Banco: BROU</li>
+                <li>Cuenta $: 0000000</li>
+                <li>Cuenta U$S: 11111111</li>
+            </ul>
+        </div>
+    </div>
 
-<!-- Sección de Información Bancaria -->
-<section class="modal-seccion">
-    <div class="container">
+ 
        
-        <div class="div_cbu animated fadeInDown">
-            <img src="sssssssss-01.png" alt="Ícono de Información" class="icon globo fade-in">
-            <p>¡El mejor regalo es tu presencia!<br>Si deseas realizarnos un regalo...</p>
-            <a href="#modal-cbu" class="btn btn-alt" onclick="openModal()">Ver más</a>
-        </div>
+
+
+
+
+
+
     </div>
-</section>
 
-<!-- Modal -->
-<div id="modal-cbu" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModal()">&times;</span>
-        <h2>Datos Bancarios</h2>
-        
-        <ul>
-            <li>A nombre de: Ana y Camila</li>
-            <li>Banco: BROU</li>
-            <li>Cuenta $: 0000000</li>
-            <li>Cuenta U$S: 11111111</li>
-            
-        </ul>
-    </div>
-</div>
-
-
-
-
-   
-    
     <script src="scripts.js"></script>
-  </body>
+</body>
 </html>
