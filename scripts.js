@@ -42,3 +42,21 @@ function playAudio() {
         audio.pause();
     }
 }
+
+
+    // Función para abrir el modal
+    function openModal() {
+        document.getElementById('modal-cbu').style.display = 'block';
+    }
+
+    // Función para cerrar el modal
+    function closeModal() {
+        document.getElementById('modal-cbu').style.display = 'none';
+    }
+
+    // Cierra el modal si el usuario hace clic fuera del contenido del modal
+    window.onclick = function(event) {
+        if (event.target === document.getElementById('modal-cbu')) {
+            closeModal();
+        }
+    }
