@@ -7,9 +7,11 @@
 
 /* Estilos generales para el cuerpo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
 }
 
 /* Estilos del encabezado */
@@ -20,7 +22,6 @@ body {
     text-align: center;
 }
 
-/* Estilo de la imagen de portada */
 .cover-image {
     width: 100%;
     height: auto;
@@ -28,12 +29,11 @@ body {
     object-fit: cover;
 }
 
-/* Estilo del ícono de reproducción */
 .play-icon {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 40px; /* Tamaño del ícono */
+    width: 40px;
     cursor: pointer;
 }
 
@@ -45,7 +45,7 @@ body {
 /* Estilos de la cuenta regresiva */
 .countdown {
     text-align: center;
-    margin: 5px;
+    padding: 20px 0;
 }
 
 #countdown-timer {
@@ -56,11 +56,11 @@ body {
 }
 
 .time-unit {
-    flex: 1;
+    flex: 1 1 100px;
     max-width: 120px;
     text-align: center;
-    background: #b3b792; /* Fondo crema */
-    border: 1px solid #dcdcdc; /* Borde gris claro */
+    background: #b3b792;
+    border: 1px solid #dcdcdc;
     border-radius: 5px;
     padding: 10px;
 }
@@ -69,86 +69,101 @@ body {
     display: block;
     font-size: 2em;
     font-weight: bold;
-    color: #ffffff; /* Color de texto oscuro para contraste */
+    color: #ffffff;
 }
 
 .label {
     font-size: 1em;
-    color: #666; /* Color de texto gris claro para etiquetas */
+    color: #666;
 }
 
 /* Estilos de la sección ceremonia-fiesta */
 .ceremonia-fiesta {
-    background: #e5d2bb; /* Fondo crema */
+    background: #e5d2b8;
     padding: 20px;
-    text-align: center; /* Centrar texto dentro de la sección */
+    text-align: center;
 }
 
 .container {
-    max-width: 1140px; /* Ajustar ancho del contenedor según sea necesario */
-    margin: 0 auto; /* Centrar el contenedor */
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .row {
     display: flex;
-    justify-content: center; /* Centrar columnas horizontalmente */
-    flex-wrap: wrap; /* Envolver columnas en pantallas más pequeñas */
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .col-md-6 {
     flex: 1;
     max-width: 100%;
-    padding: 15px; /* Añadir algo de padding dentro de las columnas */
+    padding: 15px;
 }
 
-h2 {
-    font-size: 1.5em; /* Ajustar tamaño del encabezado */
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+}
+
+h2, h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 1em; /* Ajustar tamaño del texto del párrafo */
+    font-size: 1em;
     margin-bottom: 10px;
 }
 
 a {
-    display: inline-block; /* Hacer que el enlace se comporte como un bloque */
-    color: #fff; /* Color de texto dentro del botón */
-    background-color: #725c3a; /* Color de fondo marrón claro */
-    padding: 10px 20px; /* Añadir padding dentro del botón */
-    text-decoration: none; /* Eliminar subrayado de enlaces */
-    border-radius: 5px; /* Esquinas redondeadas */
-    font-size: 1em; /* Tamaño de la fuente del texto del botón */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para efectos de hover */
+    display: inline-block;
+    color: #fff;
+    background-color: #725c3a;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 a:hover {
-    background-color: #c89b60; /* Marrón ligeramente más oscuro en hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra para profundidad */
+    background-color: #c89b60;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .fiesta-icon {
-    width: 300px; /* Tamaño del ícono */
-    height: auto; /* Mantener proporción del ícono */
-    margin-bottom: 10px; /* Espacio entre ícono y título */
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 /* Estilos de la sección de información bancaria */
 .modal-seccion {
     padding: 20px;
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #e5d2b8;
     text-align: center;
 }
 
 .icon {
-    width: 100px; /* Tamaño del ícono */
+    width: 100px;
     height: auto;
     margin-bottom: 10px;
 }
 
 .div_cbu {
     display: inline-block;
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #e5d2b8;
     color: #000;
     padding: 15px;
     border-radius: 10px;
@@ -160,7 +175,7 @@ a:hover {
 
 .btn-alt {
     display: inline-block;
-    background-color: #725c3a; /* Color marrón claro */
+    background-color: #725c3a;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -169,13 +184,13 @@ a:hover {
 }
 
 .btn-alt:hover {
-    background-color: #c89b60; /* Color marrón más oscuro en hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    background-color: #c89b60;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos del modal */
 .modal {
-    display: none; /* Oculto por defecto */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -183,11 +198,11 @@ a:hover {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro detrás del modal */
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-    background-color: #fff; /* Fondo blanco para el modal */
+    background-color: #fff;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -210,7 +225,7 @@ a:hover {
 }
 
 .modal-content h2 {
-    color: #000; /* Color negro para el título */
+    color: #000;
 }
 
 .modal-content ul {
@@ -223,34 +238,75 @@ a:hover {
     font-size: 1.1em;
 }
 
+/* Estilos adicionales */
+.informacion {
+    height: 100vh;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.col-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.new-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.new-section a {
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+/* Estilos para los enlaces diferentes */
+.different-links a {
+    background-color: #b3b792;
+    color: #725c3a;
+    padding: 10px;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+.different-links a:hover {
+    background-color: #e5e0d8;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .col-md-6 {
-        max-width: 100%; /* Ancho completo en pantallas pequeñas */
+        max-width: 100%;
     }
 
-    h2 {
-        font-size: 1.2em; /* Tamaño de fuente más pequeño para el encabezado */
+    h2, h3 {
+        font-size: 1.2em;
     }
 
     p {
-        font-size: 0.9em; /* Tamaño de fuente más pequeño para el párrafo */
+        font-size: 0.9em;
     }
 
     a {
-        font-size: 0.9em; /* Ajustar tamaño de fuente del botón */
-        padding: 8px 16px; /* Ajustar padding para pantallas pequeñas */
+        font-size: 0.9em;
+        padding: 8px 16px;
     }
 
     .fiesta-icon {
-        width: 100px; /* Tamaño del ícono en pantallas más pequeñas */
+        width: 100px;
     }
 
     .modal-content {
-        width: 90%; /* Más ancho en pantallas pequeñas */
+        width: 90%;
     }
 
     .icon {
-        width: 40px; /* Tamaño del ícono en pantallas más pequeñas */
+        width: 40px;
     }
 }
